@@ -1,0 +1,105 @@
+<!--
+
+    Portal de Links e acessos - HTML
+
+    Autor : Marcos Henrique Silveira Dias 🔥
+    Canal do Youtube : https://www.youtube.com/channel/UC3ZaLCltfI-34EQaZmWFaeg 😎
+
+*/
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="icon.png" type="image/png" />
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal</title>
+</head>
+
+<body>
+
+
+  <header>
+    <h4 class="material-icons">
+      description
+    </h4>
+    <a class="create">Adicionar Lista</a>
+  </header>
+
+  <div class="content">
+
+
+
+  </div>
+
+
+  <div class="login">
+
+    <div class="modal">
+      <h4 style="margin: 0;" class="material-icons">
+        description
+      </h4>
+      <input id="senha" type="password" placeholder="Chave de acesso"></input>
+      <button onclick="login()">Entrar</button>
+
+    </div>
+
+  </div>
+
+
+  <div class="edit">
+    <h4 style="margin: 10px; font-size: 20px; cursor: pointer;" class="material-icons close">
+      close
+    </h4>
+
+    <div class="modal editModal">
+
+      <h4 style="margin: 0;" class="material-icons">
+        create_new_folder
+      </h4>
+
+      <select name="" id="" onchange="renderInputs()" class="quant">
+        <option disabled selected>Quantidade de links</option>
+        <option value="1">1 link</option>
+        <option value="2">2 links</option>
+        <option value="3">3 links</option>
+        <option value="4">4 links</option>
+        <option value="5">5 links</option>
+        <option value="6">6 links</option>
+        <option value="7">7 links</option>
+        <option value="8">8 links</option>
+        <option value="9">9 links</option>
+        <option value="10">10 links</option>
+      </select>
+
+      <input class="input nomeFolder" placeholder="Nome para pasta">
+      </input>
+
+      <div class="contentInputs">
+
+      </div>
+
+      <button onclick="saveFolder()">Criar pasta</button>
+
+    </div>
+
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

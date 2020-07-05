@@ -1,0 +1,276 @@
+/*
+
+    Portal de Links e acessos - CSS
+
+    Autor : Marcos Henrique Silveira Dias 🔥
+    Canal do Youtube : https://www.youtube.com/channel/UC3ZaLCltfI-34EQaZmWFaeg 😎
+
+*/
+
+* {
+
+  padding: 0;
+  margin: 0;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 200;
+}
+
+html,
+body {
+
+  height: 100%;
+}
+
+header {
+
+  width: 100%;
+  height: 10%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.material-icons {
+
+  color: #5F1D61;
+  font-size: 400%;
+  margin-left: 20%;
+}
+
+header a {
+
+  color: #5F1D61;
+  margin-left: 5%;
+  margin-top: 30px;
+  transition: 500ms;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 500;
+}
+
+header a:hover {
+
+  opacity: 0.4;
+  cursor: pointer;
+
+}
+
+.login {
+
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: white;
+  width: 50%;
+  height: 90%;
+  margin-top: 100%;
+  margin: 5vh auto;
+  position: relative;
+  -webkit-box-shadow: 2px -1px 23px -2px rgba(161, 116, 204, 1);
+  -moz-box-shadow: 2px -1px 23px -2px rgba(161, 116, 204, 1);
+  box-shadow: 2px -1px 23px -2px rgba(161, 116, 204, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 200;
+
+
+}
+
+
+.edit {
+
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 200;
+}
+
+.edit.active {
+
+  opacity: 1;
+  visibility: visible;
+}
+
+/* MODAL.ACTIVE */
+
+.login.active {
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+input,
+select {
+
+  margin-top: 5%;
+  text-decoration: none;
+  border: none;
+  background-color: #5F1D61;
+  padding: 2%;
+  border-radius: 10px;
+  font-family: Helvetica;
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+
+
+}
+
+button {
+
+  width: 25%;
+  padding: 2%;
+  border: none;
+  text-decoration: none;
+  margin-top: 5%;
+  border-radius: 10px;
+  background-color: #471349;
+  color: rgb(255, 255, 255);
+  transition: 500ms;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+
+}
+
+button:hover {
+
+  opacity: 0.4;
+  cursor: pointer;
+
+}
+
+::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgb(255, 255, 255);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgb(255, 255, 255);
+}
+
+:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.content {
+
+  width: 80%;
+  margin-left: 15%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.content div {
+
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 2%;
+  height: auto;
+  width: auto;
+
+  font-family: 'Mukta', sans-serif;
+  font-weight: 200;
+  -webkit-box-shadow: -1px 10px 92px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 92px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 10px 92px -8px rgba(0, 0, 0, 0.75);
+
+  text-align: center;
+
+}
+
+.content h1 {
+
+
+  color: #2b104b;
+  font-family: Helvetica;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 700;
+  transition: 300ms;
+}
+
+.content h1:hover {
+
+  color: #5d5d5d;
+}
+
+.content p {
+
+  margin-left: 80px;
+  color: #5d5d5d;
+  font-family: Helvetica;
+
+  margin-top: 20px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+}
+
+.editInput {
+
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+select {
+
+
+  width: 30%;
+  margin-top: 10px;
+
+}
+
+
+@media screen and (max-width : 750px) {
+
+  .content div {
+
+    margin: 0;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  .content {
+
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .modal {
+
+    width: 100%;
+  }
+}
+
+.remove {
+
+  float: left;
+  margin-left: 30px;
+}
