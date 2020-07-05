@@ -1,6 +1,6 @@
 # Portal-web
 
-<p>Projeto desenvolvido em vídeo no meu canal do Youtube (<a href=""https://youtu.be/MG-rprsTBgM"">Link</a>) , que tem como objetivo facilitar o acesso as páginas na internet<p>
+<p>Projeto desenvolvido em vídeo no meu canal do Youtube (<a href="https://youtu.be/MG-rprsTBgM">Link</a>) , que tem como objetivo facilitar o acesso as páginas na internet<p>
 
 <ul>Techs</ul>
  <li>Html</li>
